@@ -15,9 +15,6 @@ namespace ElevenNote.Models
         [Display(Name="Created")]
         public DateTimeOffset CreatedUtc { get; set; }
 
-        public override string ToString()
-        {
-            return base.ToString();
-        }
+        public override string ToString() => Title;      
     }
 }

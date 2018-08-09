@@ -16,5 +16,11 @@ namespace ElevenNote.WebMVC.Controllers
             var model = new NoteListItem[0];
             return View(model);
         }
+
+        //This is the GET method. We are making a request to get the Create View. If you don't have a view and try to run this, the app will break.
+        public ActionResult Create()
+        {
+            return View();
+        }
     }
 }
